@@ -8,10 +8,14 @@ This will automatically pull down the data every hour and if the data isnt in th
 Requires 1 x Adafruits LCD plate
 
 You will need to install mysql for python
+
+Setup
+--------
+
 ```
-sudo apt-get install python-mysqldb
+sudo apt-get install python-mysqldb mysql-server mysql-client -y
 ```
-ensure you edit trains.py to put in the mysql connection details.
+ensure you edit trains.py to put in the mysql connection details once you have set them up.
 
 The file will automatically download a CSV from google docs to get the information.
 
@@ -24,9 +28,8 @@ Create a new CSV on your google docs account and put this in the first row / col
 ```
 change the WKI to your station code and then once you have done this ensure you set the spreadsheet to public and capture the download link.
 
-open main.py and find
 
-Download the CSV file from Google Docs	
+
 ```
 def downloaddue():
 ```
@@ -40,7 +43,7 @@ Change the station name to your local station.
 
 save the file and then run ./trains.py and it will display on your LCD
 
-If you like this project please donate to my beer fund / Pi-Camera you can donate via paypal to txt3rob@gmail.com
+If you like this project please donate to my Pi-Camera you can donate via paypal to txt3rob@gmail.com
 
 Also any errors PM me on the raspberry pi forums or email me.
 
