@@ -1,13 +1,17 @@
 Pi-Train-Ticker
 ===============
 
-Tells you when the next train is from your chosen station (UK) 
+Tells you when the next train is from your chosen station (UK).
+
+This will automatically pull down the data every hour and if the data isnt in the database it will automatically pull it in for you
 
 Requires 1 x Adafruits LCD plate
 
 You will need to install mysql for python
 
 sudo apt-get install python-mysqldb
+
+ensure you edit trains.py to put in the mysql connection details.
 
 The file will automatically download a CSV from google docs to get the information.
 
