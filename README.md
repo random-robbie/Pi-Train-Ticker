@@ -25,7 +25,7 @@ change the WKI to your station code and then once you have done this ensure you 
 
 open main.py and find
 
-#Download the CSV file from Google Docs	
+Download the CSV file from Google Docs	
 def downloaddue():
 
 and change the url in the link there.
