@@ -27,7 +27,7 @@ lcd = Adafruit_CharLCDPlate(busnum = 1)
 ##################################################################
 # open a database connection
 # be sure to change the host IP address, username, password and database name to match your own
-connection = MySQLdb.connect (host = "localhost", user = "root", passwd = "toor", db = "trains")
+connection = MySQLdb.connect (host = "localhost", user = "Yourusername", passwd = "Yourpassword", db = "trains")
 # prepare a cursor object using cursor() method
 cursor = connection.cursor ()
 
