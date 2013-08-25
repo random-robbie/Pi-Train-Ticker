@@ -20,7 +20,7 @@ import datetime
 import MySQLdb
 import os
 import sys
-import urllib2
+import urllib3
 from os.path import exists
 lcd = Adafruit_CharLCDPlate(busnum = 1)
 
@@ -33,7 +33,7 @@ cursor = connection.cursor ()
 
 #Download the CSV file from Google Docs	
 def downloaddue():
-	web_file = urllib2.urlopen("https://docs.google.com/spreadsheet/pub?key=0AuC2xjBKqlYadDJ2TzJkdFh5Wi03Wlh5NmMtdDNOdHc&single=true&gid=0&output=csv")
+	web_file = urllib.urlopen("https://docs.google.com/spreadsheet/pub?key=0AuC2xjBKqlYadDJ2TzJkdFh5Wi03Wlh5NmMtdDNOdHc&single=true&gid=0&output=csv")
 	out_file = open('/tmp/trains.csv', 'w')
 	out_file.write(web_file.read())
 	out_file.close()
