@@ -24,9 +24,11 @@ Currently it is set to my CSV for my local station West Kirby.
 Create a new CSV on your google docs account and put this in the first row / col
 
 ```
-=ImportHtml("http://ojp.nationalrail.co.uk/service/ldbboard/dep/wki?ar=true"& year(now()) & month(now()) & day(now()) & hour(now()),"table",1)
+=ImportHtml("http://ojp.nationalrail.co.uk/service/ldbboard/dep/WKI/LVC/To?ar=true?ar=true"& year(now()) & month(now()) & day(now()) & hour(now()),"table",1)
 ```
-change the WKI to your station code and then once you have done this ensure you set the spreadsheet to public and capture the download link.
+change the WKI to your station of depature and then change the LVC to the station code of the station it will be arriving or going to.
+
+This example has WKI = West Kirby and LVC Central
 
 
 
